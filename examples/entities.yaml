@@ -11,7 +11,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: example-website
+  name: McLane
   annotations:
     # insert the chosen annotations here
     # example
@@ -20,8 +20,8 @@ metadata:
     nexus-repository-manager/name: 'docker.mclaneco.com'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
-      title: My Dashboard
-      icon: dashboard
+      title: nexus
+      icon: nexus
 spec:
   type: website
   lifecycle: experimental
