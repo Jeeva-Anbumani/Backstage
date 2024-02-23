@@ -20,7 +20,7 @@ metadata:
     nexus-repository-manager/name: 'docker.mclaneco.com'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
-      title: My Dashboard
+      title: Nexus
       icon: dashboard
 spec:
   type: website
@@ -28,6 +28,20 @@ spec:
   owner: guests
   system: examples
   providesApis: [example-grpc-api]
+---
+# ArgoCD Component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: argocd-app
+  annotations:
+    argocd/app-name: bubble-animation
+spec:
+  type: argocd-app
+  lifecycle: experimental
+  owner: guests
+  system: argocd
+  providesApis: [argocd-grpc-api]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
