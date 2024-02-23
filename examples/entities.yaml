@@ -1,21 +1,58 @@
-# Example for displaying all images under docker.mclaneco.com repository in Nexus
+---
+# Define the missing group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: guests
+spec:
+  # Add any necessary specifications for the 'guests' group
+  # ...
 
-# System representing the Nexus repository
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: nexus-repo
+  name: examples
 spec:
-  owner: McLane
+  owner: guests
 
-# Component representing the docker.mclaneco.com repository
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: docker-mclaneco-com-repository
+  name: example-website
   annotations:
+    nexus-repository-manager/docker.image-name: 'b2bi-orders-sys-api'
+    nexus-repository-manager/docker.image-tag: 'develop---1'
     nexus-repository-manager/name: 'docker.mclaneco.com'
+  links:
+    - url: https://apps.mclaneco.com/nexuspro/
+      title: nexus
+      icon: nexus
 spec:
-  type: repository
-  lifecycle: production
-  owner: McLane
+  type: website
+  lifecycle: experimental
+  owner: guests
+  system: examples
+  providesApis: [example-grpc-api]
+
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: example-grpc-api
+spec:
+  type: grpc
+  lifecycle: experimental
+  owner: guests
+  system: examples
+  definition: |
+    syntax = "proto3";
+
+    service Exampler {
+      rpc Example (ExampleMessage) returns (ExampleMessage) {};
+    }
+
+    message ExampleMessage {
+      string example = 1;
+    };
