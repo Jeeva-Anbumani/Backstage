@@ -37,7 +37,7 @@ metadata:
   annotations:
     argocd/app-name: bubble-animation
 spec:
-  type: argocd-app
+  type: website
   lifecycle: experimental
   owner: guests
   system: argocd
