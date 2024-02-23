@@ -55,7 +55,7 @@ proxy:
     '/nexus-repository-manager':
       target: 'https://apps.mclaneco.com/nexuspro/'
       headers:
-        Authorization: Basic SWpKVC1TUzk6SDR1a3ZTQ2o5OUo3bjZ2ZENTZHE1RlVGOWtZT0dybm5QNHlJZE1NWGhUZy0=
+        Authorization: 
         X-Requested-With: 'XMLHttpRequest'
       changeOrigin: True
       secure: True
