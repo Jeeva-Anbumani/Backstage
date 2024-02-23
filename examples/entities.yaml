@@ -22,8 +22,8 @@ kind: Component
 metadata:
   name: example-website
   annotations:
-    nexus-repository-manager/docker.image-name: 'b2bi-orders-sys-api'
-    nexus-repository-manager/docker.image-tag: 'develop---1'
+    nexus-repository-manager/docker.image-name: 'a-api-a-exp-api'
+    nexus-repository-manager/docker.image-tag: 'master---2'
     nexus-repository-manager/name: 'docker.mclaneco.com'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
