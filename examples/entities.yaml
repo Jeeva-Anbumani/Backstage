@@ -33,9 +33,10 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: argocd-app
+  name: test-bubble-animation-app
+  description: ArgoCD Managed Application
   annotations:
-    argocd/app-name: test-bubble-animation-app
+    argocd/proxy-url: '/argocd/api'
 spec:
   type: service
   lifecycle: experimental
