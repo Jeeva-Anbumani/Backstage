@@ -36,6 +36,7 @@ metadata:
   name: test-bubble-animation-app
   description: ArgoCD Managed Application
   annotations:
+    argocd/app-name: 'test-bubble-animation-app'
     argocd/proxy-url: '/argocd/api'
 spec:
   type: service
