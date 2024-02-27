@@ -19,7 +19,7 @@ metadata:
     nexus-repository-manager/docker.image-tag: 'master---2'
     nexus-repository-manager/name: 'docker.mclaneco.com'
     argocd/app-name: 'test-bubble-animation-app'
-    jira/project-key: 'MCTRACE'
+    jira/project-key: 'DEVSO'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
       title: Nexus
