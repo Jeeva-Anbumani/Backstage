@@ -18,6 +18,7 @@ metadata:
     nexus-repository-manager/docker.image-name: 'a-api-a-exp-api'
     nexus-repository-manager/docker.image-tag: 'master---2'
     nexus-repository-manager/name: 'docker.mclaneco.com'
+    jira/project-key: 'MCTRACE-839'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
       title: Nexus
