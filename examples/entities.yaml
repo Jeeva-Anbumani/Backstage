@@ -18,7 +18,7 @@ metadata:
     nexus-repository-manager/docker.image-name: 'a-api-a-exp-api'
     nexus-repository-manager/docker.image-tag: 'master---2'
     nexus-repository-manager/name: 'docker.mclaneco.com'
-    argocd/app-name: 'new-app'
+    argocd/app-name: 'test-bubble-animation-app'
     jira/project-key: 'DEVSO'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
