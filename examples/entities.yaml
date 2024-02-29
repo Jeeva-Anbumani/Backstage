@@ -16,6 +16,7 @@ metadata:
     # insert the chosen annotations here
     # example
     nexus-repository-manager/name: 'docker.mclaneco.com'
+    nexus-repository-manager/docker.image-name: 'a*'
     argocd/app-name: 'test-bubble-animation-app'
     jira/project-key: 'DEVSO'
   links:
