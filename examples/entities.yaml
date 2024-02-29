@@ -15,8 +15,6 @@ metadata:
   annotations:
     # insert the chosen annotations here
     # example
-    nexus-repository-manager/docker.image-name: 'a-api-a-exp-api'
-    nexus-repository-manager/docker.image-tag: 'master---2'
     nexus-repository-manager/name: 'docker.mclaneco.com'
     argocd/app-name: 'test-bubble-animation-app'
     jira/project-key: 'DEVSO'
