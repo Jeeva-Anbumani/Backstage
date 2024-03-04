@@ -18,7 +18,7 @@ metadata:
     nexus-repository-manager/name: 'docker.mclaneco.com'
     nexus-repository-manager/docker.image-name: 'a*'
     argocd/app-name: 'test-bubble-animation-app'
-    jenkins.io/job-full-name: BB Blockchain/BB Blockchain-Development/Blockchain-pipe
+    jenkins.io/job-full-name: 'test-1/library test'
     jira/project-key: 'DEVSO'
   links:
     - url: https://apps.mclaneco.com/nexuspro/
