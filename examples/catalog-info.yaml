@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bitbucket-jxanbum
+  description: Bitbucket user jxanbum
+  annotations:
+    backstage.io/catalog-info: '{"title": "Bitbucket User: jxanbum"}'
+spec:
+  type: service
+  lifecycle: production
+  owner: jxanbum
+  implementsApis: []
+  consumesApis: []
+  providesApis: []
+  relations:
+    - type: owner
+      target: user:jxanbum
