@@ -4,7 +4,7 @@ metadata:
   name: mclane
   description: "An example of a Backstage application. Example for optional annotations"
   annotations:
-    github.com/project-slug: backstage/backstage
+    github.com/project-slug: RoadieHQ/sample-service
     backstage.io/techdocs-ref: dir:.
 spec:
   type: website
