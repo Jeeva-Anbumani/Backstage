@@ -1,11 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: mclane
-  description: "An example of a Backstage application. Example for optional annotations"
+  name: azure-devops
+  description: "azure-devops"
   annotations:
-    github.com/project-slug: RoadieHQ/sample-service
-    backstage.io/techdocs-ref: dir:.
+    dev.azure.com/project-repo: McLane-DevOps-Sandbox/bxbalak-test
 spec:
   type: website
   owner: john@example.com
