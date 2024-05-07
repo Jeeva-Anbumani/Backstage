@@ -4,7 +4,7 @@ metadata:
   name: azure-devops
   description: "azure-devops"
   annotations:
-    dev.azure.com/project-repo: McLane-DevOps-Sandbox/bxbalak-test-bxbalak-test
+    dev.azure.com/project-repo: McLane-DevOps-Sandbox/*
 spec:
   type: website
   owner: john@example.com
