@@ -5,7 +5,6 @@ metadata:
   description: "azure-devops"
   annotations:
     dev.azure.com/project-repo: McLane-DevOps-Sandbox/bxbalak-test
-    repository: *
 spec:
   type: website
   owner: john@example.com
